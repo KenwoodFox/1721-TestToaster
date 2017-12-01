@@ -24,7 +24,7 @@ public class Robot extends SampleRobot {
 	RobotDrive myRobot = new RobotDrive(0, 1); // class that handles basic drive
 												// operations
 	Joystick leftStick = new Joystick(0); // set to ID 1 in DriverStation
-	Joystick rightStick = new Joystick(1); // set to ID 2 in DriverStation
+	// Joystick rightStick = new Joystick(1); // set to ID 2 in DriverStation
 
 	public Robot() {
 		myRobot.setExpiration(0.1);
@@ -37,7 +37,7 @@ public class Robot extends SampleRobot {
 	public void operatorControl() {
 		myRobot.setSafetyEnabled(true);
 		while (isOperatorControl() && isEnabled()) {
-			myRobot.tankDrive(leftStick, rightStick);
+			myRobot.tankDrive(leftStick, leftStick);
 			Timer.delay(0.005); // wait for a motor update time
 		}
 	}
