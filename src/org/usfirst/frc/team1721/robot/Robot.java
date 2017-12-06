@@ -20,15 +20,13 @@ import edu.wpi.first.wpilibj.SampleRobot;
  * inexperienced, don't. Unless you know what you are doing, complex code will
  * be much more difficult under this system. Use IterativeRobot or Command-Based
  * instead if you're new.
- */
-
-/**
- * We're prolly gonna delete 99.9% of all this and then re-write the WHOLE thing using the formatting from demo
+ *
+ * We're prolly gonna delete 99.9% of all this and then re-write the WHOLE
+ * thing using the formatting from demo
  * it sould be fine
  *  -Joe
  *
  * @author Kenwoodfox
- *
  */
 public class Robot extends SampleRobot {
 	RobotDrive myRobot = new RobotDrive(0, 1); // class that handles basic drive
